@@ -1,6 +1,6 @@
 # Skill-Sharing-Learning-Platform-for-University
 
-In today's fast-paced digital world, university students are constantly looking for new ways to acquire and share skills beyond traditional classroom learning. Our Skill- Sharing & Learning Platform is designed to empower students by providing a collaborative space where they can share knowledge, track learning progress, and engage with peers.This platform enables users to post skill-sharing content follow structured learning plans, and interact through likes, comments, and progress updates. With features like social media authentication, notifications, and user profiles, the platform ensures an engaging, user-friendly, and secure environment for student learning. 
+  In today's fast-paced digital world, university students are constantly looking for new ways to acquire and share skills beyond traditional classroom learning. Our Skill- Sharing & Learning Platform is designed to empower students by providing a collaborative space where they can share knowledge, track learning progress, and engage with peers.This platform enables users to post skill-sharing content follow structured learning plans, and interact through likes, comments, and progress updates. With features like social media authentication, notifications, and user profiles, the platform ensures an engaging, user-friendly, and secure environment for student learning. 
 
 Developer team.
 1) Wickramaarachchi W.C.C       IT20093846
