@@ -15,31 +15,31 @@ Developer team.
 
 Main objectives of system.
 
-User Management
+1) User Management
 • Users can register and log in using email and password.
 • Users can edit their profile details (name, bio, profile picture, skills, etc.).
 • Users can view other users’ public profiles.
 • Users can follow/unfollow other users.
 • Users can delete their accounts.
 
-Skill Sharing Posts
+2) Skill Sharing Posts
 • Users can create posts to share skills, experiences, or knowledge.
 • Users can upload up to 3 photos or short videos (max: 30 sec) per post.
 • Users can add descriptions to their posts.
 • Users can edit or delete their posts.
 • Users can view posts made by others.
 
-Learning Progress Updates
+3) Learning Progress Updates
 • Users can create posts about their learning progress.
 • Predefined templates are available to help users document progress.
 • Users can edit or delete their progress update posts.
 
-Learning Plan Sharing
+4) Learning Plan Sharing
 • Users can create structured learning plans with topics, resources, and timelines.
 • Users can edit and update learning plans.
 • Users can delete learning plans if needed.
 
-Interactivity & Engagement
+5) Interactivity & Engagement
 • Users can like posts.
 • Users can comment on posts.
 • Users can edit or delete their own comments.
