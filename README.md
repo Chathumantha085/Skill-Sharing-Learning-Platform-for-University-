@@ -16,46 +16,51 @@ Developer team.
 Main objectives of system.
 
 1) User Management
-• Users can register and log in using email and password.
 
-• Users can edit their profile details.
+   • Users can register and log in using email and password.
 
-• Users can view other users’ public profiles.
+   • Users can edit their profile details.
 
-• Users can follow/unfollow other users.
+   • Users can view other users’ public profiles.
 
-• Users can delete their accounts.
+   • Users can follow/unfollow other users.
+   
+   • Users can delete their accounts.
 
 3) Skill Sharing Posts
-• Users can create posts to share skills, experiences, or knowledge.
+   
+   • Users can create posts to share skills, experiences, or knowledge.
+   
+   • Users can upload up to 3 photos or short videos (max: 30 sec) per post.
 
-• Users can upload up to 3 photos or short videos (max: 30 sec) per post.
+   • Users can add descriptions to their posts.
 
-• Users can add descriptions to their posts.
+   • Users can edit or delete their posts.
 
-• Users can edit or delete their posts.
-
-• Users can view posts made by others.
+   • Users can view posts made by others.
 
 5) Learning Progress Updates
-• Users can create posts about their learning progress.
+   
+   • Users can create posts about their learning progress.
 
-• Predefined templates are available to help users document progress.
+   • Predefined templates are available to help users document progress.
 
-• Users can edit or delete their progress update posts.
+   • Users can edit or delete their progress update posts.
 
 7) Learning Plan Sharing
-• Users can create structured learning plans with topics, resources, and timelines.
+   
+   • Users can create structured learning plans with topics, resources, and timelines.
 
-• Users can edit and update learning plans.
+   • Users can edit and update learning plans.
 
-• Users can delete learning plans if needed.
+   • Users can delete learning plans if needed.
 
 9) Interactivity & Engagement
-• Users can like posts.
+    
+   • Users can like posts.
 
-• Users can comment on posts.
+   • Users can comment on posts.
 
-• Users can edit or delete their own comments.
+   • Users can edit or delete their own comments.
 
-• Post owners can delete comments on their posts
+   • Post owners can delete comments on their posts.
