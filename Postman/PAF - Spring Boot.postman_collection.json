@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "ef6a3ce5-28fb-4f23-a2de-c82b91a4c2fc",
+		"name": "PAF - Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Management",
+			"item": [
+				{
+					"name": "Follow/Unfollow API",
+					"item": [
+						{
+							"name": "Follow a User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{PAF}}/api/users/follow/{userId}",
+									"host": [
+										"{{PAF}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"follow",
+										"{userId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Unfollow a User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{PAF}}/api/users/unfollow/{userId}",
+									"host": [
+										"{{PAF}}"
+									],
+									"path": [
+										"api",
+										"users",
+										"unfollow",
+										"{userId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Current User Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/users/me",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Profile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bio\": \"Full Stack Developer\",\r\n  \"profilePicture\": \"https://example.com/new_profile.jpg\",\r\n  \"skills\": [\"Java\", \"Spring Boot\", \"React\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PAF}}/api/users/me",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Another User's Public Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/users/{userId}",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{userId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Create a New Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Learn Spring Boot\",\r\n  \"description\": \"I'll teach you Spring Boot from basics to advanced\",\r\n  \"mediaUrls\": [\r\n    \"/uploads/image1.jpg\",\r\n    \"/uploads/video1.mp4\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PAF}}/api/posts",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Updated: Learn Spring Boot\",\r\n  \"description\": \"Updated comprehensive guide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PAF}}/api/posts/{postId}",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{postId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/posts/{postId}",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{postId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/posts",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts by User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/posts/user/680befc673688657efd8ec7a",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"user",
+								"680befc673688657efd8ec7a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " Get Single Post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/posts/{postId}",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"{postId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts by Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PAF}}/api/posts/type/{type}",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"type",
+								"{type}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Media Files",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/chari/Downloads/images.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{PAF}}/api/posts/upload",
+							"host": [
+								"{{PAF}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Parse the response\r",
+							"let response = pm.response.json();\r",
+							"\r",
+							"// Set the environment variable\r",
+							"pm.environment.set(\"access_token\", response.accessToken);\r",
+							"\r",
+							"// Optional: Log it to the Postman console\r",
+							"console.log(\"Access token set:\", response.accessToken);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"Password@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PAF}}/api/auth/signin",
+					"host": [
+						"{{PAF}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"john_doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"Password@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PAF}}/api/auth/signup",
+					"host": [
+						"{{PAF}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
