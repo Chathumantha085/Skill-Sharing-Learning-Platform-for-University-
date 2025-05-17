@@ -1,66 +1,70 @@
-# Skill-Sharing-Learning-Platform-for-University
+# Getting Started with Create React App
 
-   In today's fast-paced digital world, university students are constantly looking for new ways to acquire and share skills beyond traditional classroom learning. Our Skill- Sharing & Learning Platform is designed to empower students by providing a collaborative space where they can share knowledge, track learning progress, and engage with peers.This platform enables users to post skill-sharing content follow structured learning plans, and interact through likes, comments, and progress updates. With features like social media authentication, notifications, and user profiles, the platform ensures an engaging, user-friendly, and secure environment for student learning. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Developer team.
-1) Wickramaarachchi W.C.C       IT20093846
+## Available Scripts
 
-2) Kavishka P.K.P               IT19123332
+In the project directory, you can run:
 
-3) Fathima Shamrina             IT19504100
+### `npm start`
 
-4) K.P.Kasun Maduranga          IT19954660
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-Main objectives of system.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1) User Management
+### `npm run build`
 
-   • Users can register and log in using email and password.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-   • Users can edit their profile details.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   • Users can view other users’ public profiles.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-   • Users can follow/unfollow other users.
-   
-   • Users can delete their accounts.
+### `npm run eject`
 
-3) Skill Sharing Posts
-   
-   • Users can create posts to share skills, experiences, or knowledge.
-   
-   • Users can upload up to 3 photos or short videos (max: 30 sec) per post.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-   • Users can add descriptions to their posts.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   • Users can edit or delete their posts.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-   • Users can view posts made by others.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-5) Learning Progress Updates
-   
-   • Users can create posts about their learning progress.
+## Learn More
 
-   • Predefined templates are available to help users document progress.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   • Users can edit or delete their progress update posts.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-7) Learning Plan Sharing
-   
-   • Users can create structured learning plans with topics, resources, and timelines.
+### Code Splitting
 
-   • Users can edit and update learning plans.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-   • Users can delete learning plans if needed.
+### Analyzing the Bundle Size
 
-9) Interactivity & Engagement
-    
-   • Users can like posts.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   • Users can comment on posts.
+### Making a Progressive Web App
 
-   • Users can edit or delete their own comments.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-   • Post owners can delete comments on their posts.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

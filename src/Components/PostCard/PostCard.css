@@ -1,0 +1,240 @@
+.post-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #5858FA;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.icon-button:hover {
+  background: #f5f5f5;
+}
+
+.delete-button:hover {
+  color: #ff4444;
+}
+
+.confirm-button:hover {
+  color: #00C851;
+}
+
+.post-content {
+  padding: 15px 20px;
+}
+
+.post-caption {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.edit-caption {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.post-images {
+  margin: 15px 0;
+}
+
+.image-slide img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.image-upload {
+  margin-top: 15px;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #5858FA;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.upload-button:hover {
+  background: #4545d6;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 20px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.stat-item:hover {
+  background: #f5f5f5;
+}
+
+.stat-item svg {
+  font-size: 1.3rem;
+}
+
+.liked {
+  color: #5858FA;
+}
+
+.comment-section {
+  padding: 15px 20px;
+}
+
+.comment-input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.send-button {
+  background: #5858FA;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal styles */
+.share-modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.share-modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Slider settings */
+.slick-slider {
+  width: 100%;
+}
+
+.slick-dots li button:before {
+  color: #5858FA;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #5858FA;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .post-card {
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .post-header {
+    padding: 12px 15px;
+  }
+  
+  .post-content, .comment-section {
+    padding: 12px 15px;
+  }
+}
+
