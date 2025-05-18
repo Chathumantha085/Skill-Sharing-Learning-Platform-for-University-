@@ -1,0 +1,235 @@
+.post-add-container {
+  margin-bottom: 24px;
+}
+
+.error-message {
+  color: #ff3333;
+  padding: 8px;
+  margin: 8px 0;
+  background-color: #ffeeee;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.post-add-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.post-add-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-add-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #050505;
+}
+
+.post-caption {
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 12px 0;
+  margin-bottom: 12px;
+  outline: none;
+  font-family: inherit;
+}
+
+.post-caption::placeholder {
+  color: #65676b;
+}
+
+.image-preview-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.image-preview-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.image-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.upload-progress {
+  margin-bottom: 16px;
+  background: #f0f2f5;
+  border-radius: 8px;
+  height: 4px;
+  position: relative;
+}
+
+.progress-bar {
+  background: #1877f2;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.upload-progress span {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 12px;
+  color: #65676b;
+}
+
+.post-add-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #e4e6eb;
+}
+
+.post-options {
+  display: flex;
+  gap: 8px;
+}
+
+.image-upload-btn, .emoji-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #65676b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.image-upload-btn:hover, .emoji-btn:hover {
+  background: #f0f2f5;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.post-submit-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.post-submit-btn:disabled {
+  background: #e4e6eb;
+  cursor: not-allowed;
+}
+
+.post-submit-btn:hover:not(:disabled) {
+  background: #166fe5;
+}
+
+
+
+
+/* Add these styles to your existing CSS */
+.media-preview-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.media-preview-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.media-preview-item img,
+.media-preview-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-media-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.media-upload-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.media-upload-btn:hover {
+  background: #f0f2f5;
+}
